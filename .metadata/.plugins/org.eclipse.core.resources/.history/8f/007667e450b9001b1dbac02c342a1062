@@ -1,0 +1,19 @@
+package com.entitymapping0419.listeners;
+
+import java.io.IOException;
+
+public class ExceptionExample {
+
+	
+	public static void main(String[] args) throws IOException {
+		
+		try {
+			throw new IOException("Custom IO Exception");
+		}catch(IOException ie) {
+			System.out.println("In catch block");
+			throw ie;
+		} finally {
+			//throw new ArithmeticException("Finally block");
+		}
+	}
+}

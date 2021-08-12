@@ -1,0 +1,128 @@
+package com.dipak.datastructure.list;
+
+import java.util.NoSuchElementException;
+
+public class LinkedList {
+
+	private Node first;
+	private Node last;
+	private int size;
+
+	// 12 2 5 8 10 50
+	public void addFirst(int value) {
+		Node node = null;
+		if (isEmpty()) {
+			node = new Node(value, null);
+			last = node;
+		} else {
+			node = new Node(value, first);
+		}
+		first = node;
+		size++;
+	}
+
+	public void removeFirst() {
+		if (isEmpty()) {
+			throw new NoSuchElementException();
+		}
+		size--;
+		if (first == last) {
+			first = last = null;
+			return;
+		}
+		Node newFirstNode = first.getNext();
+		first.setNext(null);
+		first = newFirstNode;
+		
+	}
+
+	public void removeLast() {
+		if (isEmpty()) {
+			throw new NoSuchElementException();
+		}
+		size--;
+		if(first == last) {
+			first = last = null;
+			return;
+		}
+		
+		Node lastNode = first;
+		while (lastNode.getNext() != last) {
+			lastNode = lastNode.getNext();
+		}
+		lastNode.setNext(null);
+		last =lastNode;
+		
+	}
+
+	public void addLast(int value) {
+		Node node = new Node(value, null);
+		if (isEmpty()) {
+			first = node;
+			last = node;
+		} else {
+			node = new Node(value, null);
+			last.setNext(node);
+		}
+		last = node;
+		size++;
+	}
+
+	public boolean isEmpty() {
+		return first == null;
+	}
+
+	public String toString() {
+		StringBuilder builder = new StringBuilder("[");
+		if (isEmpty()) {
+			return builder.append("]").toString();
+		} else {
+			Node node = first;
+			do {
+				builder.append(node.getValue());
+				builder.append(",");
+				node = node.getNext();
+			} while (node != null);
+		}
+		// return builder.replace(start, end, str)
+		return builder.replace(builder.length() - 1, builder.length(), "]").toString();
+	}
+
+	public int indexOf(int item) {
+		Node node = first;
+		int index = 0;
+		do {
+			if (node.getValue() == item) {
+				return index;
+			}
+			index++;
+			node = node.getNext();
+		} while (node != null);
+		return -1;
+	}
+
+	public boolean contains(int item) {
+		return indexOf(item) != -1;
+	}
+	
+	public int size() {
+		return size;
+	}
+	
+	
+	public int[] toArray() {
+		int[] array = new int[size];
+		Node current = first;
+		int index = 0;
+		while(current != null) {
+			array[index++] = current.getValue();
+			current= current.getNext();
+		}
+		return array;
+	}
+
+	public void reverse() {
+		Node firstTemp = first;
+		
+	}
+}

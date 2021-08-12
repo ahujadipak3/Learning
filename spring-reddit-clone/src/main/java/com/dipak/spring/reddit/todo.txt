@@ -1,0 +1,11 @@
+Instant (Java 8)
+Lombok
+Builder Command Pattern
+Using enum in entities
+Hibernate save, update, persist, saveOrUpdate, merge
+2 phase vs 3 phase
+peristent, transient, and detached
+Spring Data JPA
+Instead of Field level autowiring, use constructor level
+ThreadLocal
+SecurityContext

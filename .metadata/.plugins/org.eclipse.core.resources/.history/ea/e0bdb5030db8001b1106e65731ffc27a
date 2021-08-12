@@ -1,0 +1,19 @@
+package com.entitymapping0419.listeners;
+
+public class Ladder {
+
+	public static void main(String[] args) {
+		
+		try {
+			doStuff("X");	
+		}catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("exec");
+		}
+		doStuff("X");
+	}
+	
+	static int doStuff(String ar) {
+		return Integer.parseInt(ar);
+	}
+}

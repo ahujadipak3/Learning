@@ -1,0 +1,8 @@
+package com.dipak.stringmanipulation;
+
+public class CountVowels {
+
+	public static void main(String[] args) {
+		String str = "Dipak";
+	}
+}

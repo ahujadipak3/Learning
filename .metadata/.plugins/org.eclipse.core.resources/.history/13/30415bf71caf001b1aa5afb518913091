@@ -1,0 +1,12 @@
+package com.dipak.datastructure.hashtable;
+
+public class Hashtable {
+
+	private class Entry {
+		
+		private int key;
+		private String value;
+		
+		
+	}
+}

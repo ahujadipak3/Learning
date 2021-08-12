@@ -1,0 +1,21 @@
+package com.dipak.jan;
+
+public class Array {
+
+	private Object[] arr;
+	private int length;
+	private int counter = 0;
+	Array(int length) {
+		this.length = length;
+		arr = new Object[this.length];
+	}
+	
+	public void insert(Object item) {
+		this.arr[counter++] = item;
+	}
+	
+	public String toString() {
+		return java.util.Arrays.toString(arr);
+		
+	}
+}

@@ -1,0 +1,8 @@
+package com.entitymapping0419.listeners;
+
+public class ArrayQualys {
+
+	public static void main(String[] args) {
+		int[] arr = {1,3,5,8,10,12,9,7,6};
+	}
+}

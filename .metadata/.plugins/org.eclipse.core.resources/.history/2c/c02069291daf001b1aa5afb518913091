@@ -1,0 +1,24 @@
+package com.dipak.datastructure.hashtable;
+
+import com.dipak.datastructure.list.LinkedList;
+
+public class Hashtable {
+
+	private class Entry {
+
+		private int key;
+		private String value;
+
+		public Entry(int key, String value) {
+			super();
+			this.key = key;
+			this.value = value;
+		}
+	}
+	
+	LinkedList<Entry>[] list = new LinkedList<>[10];
+	
+	public void put(int key, String value) {
+		
+	}
+}

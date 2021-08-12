@@ -1,0 +1,19 @@
+package pattern.design;
+
+import java.util.Calendar;
+
+public class BuilderPattern {
+	public static void main(String[] args) {
+		Salary s = new Salary.Builder().salaryAmt(50L).employeeNo(0).build();
+		
+		
+		//new Salary.Builder().notifyAll();
+		String s1 = new Object().toString().replace("0", "1");
+		
+		//String s1 =  Calendar.getInstance();
+	}
+	
+	
+	
+	
+}

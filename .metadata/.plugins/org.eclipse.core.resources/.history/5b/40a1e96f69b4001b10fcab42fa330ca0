@@ -1,0 +1,14 @@
+package com.dipak.stringmanipulation;
+
+import java.util.HashSet;
+
+public class CountVowels {
+
+	public static void main(String[] args) {
+		String str = "Dipak";
+		Set<Character> setOfVowels = new HashSet<>();
+		for (int i = 0; i < str.length(); i++) {
+			if(str.toCharArray())
+		}
+	}
+}

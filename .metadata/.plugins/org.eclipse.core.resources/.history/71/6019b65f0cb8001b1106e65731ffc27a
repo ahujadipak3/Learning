@@ -1,0 +1,10 @@
+package com.entitymapping0419.listeners;
+
+public class SampleClass {
+
+	static String str;
+	
+	public void SampleClass() {
+		str ="helloword";
+	}
+}

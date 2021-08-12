@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;LongestSubString&apos; to &apos;LongestSubstring&apos;&#x0D;&#x0A;- Original project: &apos;SampleTestProject&apos;&#x0D;&#x0A;- Original element: &apos;LongestSubString&apos;&#x0D;&#x0A;- Renamed element: &apos;LongestSubstring&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LongestSubString&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{LongestSubString.java[LongestSubString" matchStrategy="1" name="LongestSubstring" qualified="false" references="true" similarDeclarations="false" stamp="1625477214444" textual="false" version="1.0"/>
+</session>

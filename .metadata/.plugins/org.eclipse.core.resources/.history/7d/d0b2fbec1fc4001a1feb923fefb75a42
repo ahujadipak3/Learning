@@ -1,0 +1,41 @@
+package pattern.design;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class BuilderPattern {
+	public static void main(String[] args) {
+		Salary s = new Salary.Builder().salaryAmt(50L).employeeNo(0).build();
+		//Salary s = new Salary.Builder().salaryAmt(50L).employeeNo(0).build();
+		System.out.println(s);
+		
+		//new Salary.Builder().notifyAll();
+		String s1 = new Object().toString().replace("0", "1");
+		
+		//String s1 =  Calendar.getInstance();
+		List<String> list = new ArrayList<String>();
+		list.add("Name1");
+		list.add("Name2");
+		Collections.sort(list,new Comparator<String>() {
+
+			public int compare(String o1, String o2) {
+				// TODO Auto-generated method stub
+				return o1.compareTo(o2);
+			}
+			
+		});
+		
+		System.out.println(list);
+		
+	      Collections.sort(list, (s1, s2) -> s1.compareTo(s2));
+
+	}
+	
+	
+	
+	
+}

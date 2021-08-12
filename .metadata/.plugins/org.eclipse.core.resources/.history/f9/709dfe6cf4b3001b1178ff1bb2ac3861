@@ -1,0 +1,9 @@
+package com.dipak.datastructure.searching;
+
+public class BinarySearch {
+
+	private void ain() {
+		// TODO Auto-generated method stub
+
+	}
+}

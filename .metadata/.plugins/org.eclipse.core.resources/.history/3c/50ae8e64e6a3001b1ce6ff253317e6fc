@@ -1,0 +1,13 @@
+package com.dipak.decorator.solution;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//CloudStream cs = new CloudStream();
+		Stream es = new CompressedStream(new EncryptedStream(new CloudStream()));
+		es.write("Some Data");
+		
+		new FileWr
+		
+	}
+}

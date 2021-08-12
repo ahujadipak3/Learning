@@ -1,0 +1,14 @@
+package com.dipak.datastructure.searching;
+
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		int[] arr = {1, 5, 7, 9, 12, 56, 89, 98};
+		int number = 56;
+		int middle = arr.length/2;
+		
+		if(arr[middle] == number) {
+			return arr[middle];
+		}
+	}
+}

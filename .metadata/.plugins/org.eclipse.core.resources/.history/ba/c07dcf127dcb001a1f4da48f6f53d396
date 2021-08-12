@@ -1,0 +1,30 @@
+package com.dipak.spring.reddit.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dipak.spring.reddit.dto.RegisterRequest;
+import com.dipak.spring.reddit.service.AuthService;
+
+import lombok.AllArgsConstructor;
+
+@RestController
+@RequestMapping("/api/auth")
+@AllArgsConstructor
+public class AuthController {
+
+	private final AuthService authService;
+	
+	@PostMapping(value = "/signup")
+	public void signup(@RequestBody RegisterRequest  registerRequest) {
+		authService.signup(registerRequest);
+	}
+	
+	@GetMapping(value = "/accountVerification/{token}")
+	public void verifyAccount() {
+		
+	}
+}

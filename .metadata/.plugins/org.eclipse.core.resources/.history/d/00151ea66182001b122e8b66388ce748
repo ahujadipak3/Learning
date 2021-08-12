@@ -1,0 +1,48 @@
+package com.dipak.jan;
+
+public class Array {
+
+	private int[] arr;
+	private int length;
+	private int counter = 0;
+	Array(int length) {
+		this.length = length;
+		arr = new int[this.length];
+	}
+	
+	public void insert(int item) {
+		if(counter >= this.length) {
+			int[] arrNew = new int[this.length*2];
+			for (int i = 0; i < arr.length; i++) {
+				arrNew[i] = arr[i];
+			}
+			arr = arrNew;
+		}
+		this.arr[counter++] = item;
+	}
+	
+	public String toString() {
+		return java.util.Arrays.toString(arr);
+		
+	}
+	
+	public void removeAt(int index) {
+		if(index >= 0 && index < counter) {
+			for (int i = index; i < arr.length -1; i++) {
+				arr[i] = arr[i+1];
+			}
+			count--;
+		}
+		
+	}
+	
+	public int indexOf(int element) {
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i] == element) {
+				return i;
+			}
+		}
+		return -1;
+		
+	}
+ }

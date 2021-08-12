@@ -1,0 +1,20 @@
+package com.dipak.datastructure.hashtable;
+
+public class Hashtable {
+
+	private class Entry {
+
+		private int key;
+		private String value;
+
+		public Entry(int key, String value) {
+			super();
+			this.key = key;
+			this.value = value;
+		}
+	}
+	
+	public void put(int key, String value) {
+		
+	}
+}

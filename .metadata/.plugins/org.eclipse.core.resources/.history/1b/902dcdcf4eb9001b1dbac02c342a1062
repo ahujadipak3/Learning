@@ -1,0 +1,44 @@
+package com.entitymapping0419.listeners;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class EditFile {
+
+	public static void main(String[] args) throws IOException {
+		
+		PrintWriter writer=null;
+		BufferedReader br = null;
+		try {
+			writer = new PrintWriter(new BufferedWriter(new FileWriter("C:\\Nividous\\RPACC51_2103\\server\\portal\\tomcat-7.0.40\\webapps\\advisorBPM\\META-INF\\context.xml")));
+			br = new BufferedReader(new FileReader(new File("C:\\Nividous\\RPACC51_2103\\server\\portal\\tomcat-7.0.40\\webapps\\advisorBPM\\META-INF\\context.xml")));
+			// ... then inside your loop ...
+			String line;
+			while ((line = br.readLine()) != null) {
+			    if ("/>".equals(line.trim())) {
+			        line = line.replace("/>",
+			                "/> ");
+			    }
+			    // Always write the line, whether you changed it or not.
+			    writer.println(line);
+			}
+	
+		} finally {
+			writer.close();
+			br.close();
+		}
+		
+		// ... and finally ...
+
+		/*
+		 * File realName = new File("d:\\book.txt"); realName.delete(); // remove the
+		 * old file new File("d:\\book.temp").renameTo(realName); // Rename tem
+		 */	}
+
+}

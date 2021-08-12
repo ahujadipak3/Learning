@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;java8.lambda.FunctionalInterface&apos; to &apos;FunctionalInterfaceSample&apos;&#x0D;&#x0A;- Original project: &apos;pattern.design&apos;&#x0D;&#x0A;- Original element: &apos;java8.lambda.FunctionalInterface&apos;&#x0D;&#x0A;- Renamed element: &apos;java8.lambda.FunctionalInterfaceSample&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;FunctionalInterface&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;java8.lambda{FunctionalInterface.java[FunctionalInterface" matchStrategy="1" name="FunctionalInterfaceSample" qualified="false" references="true" similarDeclarations="false" stamp="1594747218389" textual="false" version="1.0"/>
+</session>

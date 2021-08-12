@@ -1,0 +1,17 @@
+package com.dipak.jan;
+
+public class ArrayExample {
+
+	public static void main(String[] args) {
+		int[] arr = {1, 3, 5};
+		arr[2] = 0;
+		
+		Array array = new Array(3);
+		System.out.println(array.toString());
+		array.insert(5);
+		array.insert(10);
+		array.insert(51);
+		System.out.println(array.toString());
+
+	}
+}

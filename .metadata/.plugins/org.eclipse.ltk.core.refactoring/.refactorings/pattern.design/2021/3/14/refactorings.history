@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;BitwiseAndTest.java&apos; to &apos;pattern.design/src/main/java/com.dipa.dsa.practice&apos;&#x0D;&#x0A;- Original project: &apos;pattern.design&apos;&#x0D;&#x0A;- Destination element: &apos;pattern.design/src/main/java/com.dipa.dsa.practice&apos;&#x0D;&#x0A;- Original element: &apos;BitwiseAndTest.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.dipa.dsa.practice" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;{BitwiseAndTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1617192723372" units="1" version="1.0"/>
+</session>

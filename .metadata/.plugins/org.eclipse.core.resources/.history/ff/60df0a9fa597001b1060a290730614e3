@@ -1,0 +1,16 @@
+package com.dipak.datastructure.list;
+
+public class LinkedListExample {
+
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
+		list.addFirst(5);
+		list.addFirst(10);
+		list.addLast(15);
+		list.addLast(25);
+		list.addFirst(3);
+		System.out.println(list.toString());
+		
+		System.out.println(list.indexOf(3));
+	}
+}
